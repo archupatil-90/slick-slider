@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/slick.css">
+
+</head>
+<style>
+    img{
+        width: 100%;
+        height: 50vh;
+    }
+    .slider-img{
+        display: flex;
+    }
+    .slick-slide img{
+    height: 50vh;
+    }
+    .slick-dots{
+        display: inline-flex;
+        justify-content: center;
+        padding: 0;
+        list-style: none;
+    }
+    .slick-dots li{
+margin:  0 2.5rem;
+background-color:#fff;
+border-radius: 50%;
+    }
+    .slick-dots button{
+        display: block;
+        height: 16px;
+        width: 16px;
+        border-radius: 50%;
+        padding: 0;
+        border: none;
+    }
+</style>
+<body>
+    <div class="slider-area">
+        <div class="slider-img">
+            <div>
+                <!-- You can put an image or text inside each slide div -->
+                <img src="https://cdn.pixabay.com/photo/2014/11/30/14/11/cat-551554__340.jpg">
+              </div>
+              <div>
+                <img src="https://cdn.pixabay.com/photo/2014/11/30/14/11/cat-551554__340.jpg">
+              </div>
+              <div>
+                <img src="https://cdn.pixabay.com/photo/2014/11/30/14/11/cat-551554__340.jpg">
+              </div>
+              <!-- <div>
+                <img src="https://cdn.pixabay.com/photo/2014/11/30/14/11/cat-551554__340.jpg">
+              </div>
+              <div>
+                <img src="https://cdn.pixabay.com/photo/2014/11/30/14/11/cat-551554__340.jpg">
+              </div> -->
+      </div>
+    </div>
+      
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
+      <script src="js/slick.js"></script>
+      <script src="js/slick.min.js"></script>
+
+<script>
+   
+
+    $('.slider-img').slick({
+        dots=true,
+        autoplay=true,
+        autoplaySpeed:1000,
+        arrow=true,
+        slidesToShow: 2,
+  slidesToScroll: 1,
+
+
+    });
+
+  
+
+  
+
+</script>
+    
+</body>
+
+</html>
